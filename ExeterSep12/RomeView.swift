@@ -11,23 +11,17 @@ struct RomeView: View {
   @State var color = Color("RomanRed")
   var body: some View {
     ZStack {
-      
       color
         .edgesIgnoringSafeArea(.all)
-      
       VStack {
         Image("Rome")
           .resizable()
         .scaledToFit()
-        
-        
         ColorPicker("color", selection: $color)
       }
-     
       Text("hello Exeter")
         .foregroundColor(.white)
         .font(.title)
-        
     }
     .edgesIgnoringSafeArea(.all)
   }
